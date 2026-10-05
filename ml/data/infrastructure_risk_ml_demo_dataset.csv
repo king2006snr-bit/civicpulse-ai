@@ -1,0 +1,81 @@
+infrastructure_id,infrastructure_type,location,latitude,longitude,complaint_count,complaints_last_7_days,complaints_last_30_days,complaint_severity_1_to_5,infrastructure_age_years,infrastructure_condition,previous_incidents,maintenance_delay_days,unresolved_complaints,damage_frequency_per_month,previous_risk_score,risk_score,risk_level
+INF-001,Road,Guntur,16.3067,80.4365,56,15,41,5,18,Poor,4,42,21,7.8,95.0,100.0,CRITICAL
+INF-002,Bridge,Eluru,16.7107,81.0952,33,9,24,2,29,Fair,3,18,18,7.6,95.0,80.3,CRITICAL
+INF-003,Streetlight,Guntur,16.3067,80.4365,36,5,12,4,23,Fair,3,34,14,2.3,95.0,65.1,HIGH
+INF-004,Road,Guntur,16.3067,80.4365,12,7,7,1,15,Good,0,15,4,0.5,49.0,30.3,LOW
+INF-005,Water Pipeline,Guntur,16.3067,80.4365,32,11,23,5,11,Fair,9,28,16,4.6,95.0,94.0,CRITICAL
+INF-006,Streetlight,Eluru,16.7107,81.0952,42,19,38,3,5,Poor,8,56,25,6.1,95.0,100.0,CRITICAL
+INF-007,Public Building,Machilipatnam,16.1875,81.1389,5,3,12,1,28,Good,1,8,0,1.8,63.1,24.3,LOW
+INF-008,Drainage,Eluru,16.7107,81.0952,23,13,23,1,30,Fair,4,22,17,2.8,95.0,74.7,HIGH
+INF-009,Drainage,Machilipatnam,16.1875,81.1389,46,7,24,2,11,Fair,6,22,12,2.5,95.0,64.5,HIGH
+INF-010,Bridge,Tenali,16.243,80.64,8,7,7,5,35,Good,1,9,8,0.0,95.0,43.8,MEDIUM
+INF-011,Bridge,Vijayawada,16.5062,80.648,51,15,42,2,6,Poor,4,31,12,8.4,95.0,80.3,CRITICAL
+INF-012,Public Building,Hyderabad,17.385,78.4867,21,7,20,5,20,Fair,3,29,13,4.6,95.0,73.0,HIGH
+INF-013,Road,Vijayawada,16.5062,80.648,65,12,45,4,4,Poor,8,46,23,9.3,95.0,100.0,CRITICAL
+INF-014,Bridge,Eluru,16.7107,81.0952,56,12,44,4,7,Poor,7,42,17,5.7,95.0,100.0,CRITICAL
+INF-015,Bridge,Guntur,16.3067,80.4365,47,15,41,1,13,Poor,8,26,23,7.0,95.0,100.0,CRITICAL
+INF-016,Bridge,Guntur,16.3067,80.4365,32,4,26,1,11,Fair,4,27,5,6.7,95.0,55.1,MEDIUM
+INF-017,Bridge,Nellore,14.4426,79.9865,63,14,33,1,13,Poor,6,55,22,9.1,95.0,100.0,CRITICAL
+INF-018,Road,Visakhapatnam,17.6868,83.2185,35,9,27,5,5,Fair,4,40,9,3.4,95.0,71.9,HIGH
+INF-019,Bridge,Machilipatnam,16.1875,81.1389,45,17,40,1,21,Poor,9,58,21,6.9,95.0,100.0,CRITICAL
+INF-020,Streetlight,Visakhapatnam,17.6868,83.2185,7,1,9,5,5,Good,0,0,7,1.1,73.9,25.5,LOW
+INF-021,Public Building,Machilipatnam,16.1875,81.1389,11,3,11,3,7,Good,2,6,6,0.0,75.4,31.1,LOW
+INF-022,Road,Machilipatnam,16.1875,81.1389,25,9,23,3,6,Fair,4,12,12,7.0,95.0,65.7,HIGH
+INF-023,Road,Vijayawada,16.5062,80.648,7,1,11,5,5,Good,1,10,5,0.1,83.6,31.3,LOW
+INF-024,Bridge,Tenali,16.243,80.64,19,7,30,4,16,Fair,7,24,15,4.0,95.0,89.2,CRITICAL
+INF-025,Drainage,Visakhapatnam,17.6868,83.2185,64,13,35,2,2,Poor,9,43,27,9.9,95.0,100.0,CRITICAL
+INF-026,Streetlight,Nellore,14.4426,79.9865,5,3,4,2,20,Good,0,12,5,2.3,56.7,29.1,LOW
+INF-027,Road,Tenali,16.243,80.64,8,5,8,5,8,Good,1,0,6,0.5,76.9,27.2,LOW
+INF-028,Streetlight,Hyderabad,17.385,78.4867,31,14,25,5,3,Fair,2,5,12,3.5,90.8,71.1,HIGH
+INF-029,Water Pipeline,Tenali,16.243,80.64,43,12,17,3,21,Fair,4,20,14,5.6,95.0,81.1,CRITICAL
+INF-030,Water Pipeline,Visakhapatnam,17.6868,83.2185,28,10,21,2,20,Fair,2,32,10,3.1,95.0,68.1,HIGH
+INF-031,Public Building,Nellore,14.4426,79.9865,30,12,23,2,11,Fair,3,23,10,4.6,95.0,67.9,HIGH
+INF-032,Drainage,Guntur,16.3067,80.4365,16,0,3,4,27,Good,0,7,3,1.1,84.6,18.8,LOW
+INF-033,Drainage,Guntur,16.3067,80.4365,62,14,45,1,15,Poor,7,27,22,5.3,95.0,90.5,CRITICAL
+INF-034,Water Pipeline,Nellore,14.4426,79.9865,22,11,22,2,33,Fair,4,15,12,5.6,95.0,70.7,HIGH
+INF-035,Public Building,Nellore,14.4426,79.9865,59,15,41,5,16,Poor,9,50,22,6.9,95.0,100.0,CRITICAL
+INF-036,Water Pipeline,Tenali,16.243,80.64,39,9,30,5,30,Fair,4,26,16,3.2,95.0,89.6,CRITICAL
+INF-037,Drainage,Machilipatnam,16.1875,81.1389,31,4,29,3,27,Fair,3,24,12,3.3,95.0,68.3,HIGH
+INF-038,Bridge,Nellore,14.4426,79.9865,56,12,45,1,35,Poor,9,50,22,6.8,95.0,100.0,CRITICAL
+INF-039,Streetlight,Nellore,14.4426,79.9865,0,5,8,1,22,Good,0,0,0,4.7,43.7,22.3,LOW
+INF-040,Road,Vijayawada,16.5062,80.648,56,16,42,2,16,Poor,6,45,25,7.0,95.0,100.0,CRITICAL
+INF-041,Bridge,Guntur,16.3067,80.4365,59,15,36,4,20,Poor,2,51,20,5.1,95.0,99.0,CRITICAL
+INF-042,Public Building,Machilipatnam,16.1875,81.1389,19,1,6,5,8,Good,0,11,0,1.2,76.2,16.5,LOW
+INF-043,Drainage,Guntur,16.3067,80.4365,37,5,17,3,24,Fair,5,10,6,4.8,95.0,62.3,HIGH
+INF-044,Bridge,Tenali,16.243,80.64,45,11,44,5,6,Poor,5,38,28,8.0,95.0,100.0,CRITICAL
+INF-045,Streetlight,Machilipatnam,16.1875,81.1389,7,0,19,1,18,Good,1,8,7,0.2,59.4,20.9,LOW
+INF-046,Road,Nellore,14.4426,79.9865,55,13,44,5,6,Poor,5,54,13,11.7,95.0,100.0,CRITICAL
+INF-047,Streetlight,Nellore,14.4426,79.9865,57,16,46,2,20,Poor,9,50,27,7.2,95.0,100.0,CRITICAL
+INF-048,Bridge,Guntur,16.3067,80.4365,44,15,42,5,19,Poor,7,47,24,7.9,95.0,100.0,CRITICAL
+INF-049,Road,Nellore,14.4426,79.9865,24,9,25,4,1,Fair,5,29,13,2.5,95.0,71.5,HIGH
+INF-050,Road,Machilipatnam,16.1875,81.1389,50,15,35,5,16,Poor,7,57,16,8.0,95.0,98.8,CRITICAL
+INF-051,Water Pipeline,Machilipatnam,16.1875,81.1389,31,2,26,1,4,Fair,5,30,14,4.6,95.0,56.3,MEDIUM
+INF-052,Road,Machilipatnam,16.1875,81.1389,56,13,51,1,15,Poor,5,24,22,5.5,95.0,86.4,CRITICAL
+INF-053,Road,Eluru,16.7107,81.0952,57,16,43,3,35,Poor,8,29,16,8.9,95.0,100.0,CRITICAL
+INF-054,Streetlight,Eluru,16.7107,81.0952,33,5,27,4,33,Fair,4,13,15,4.7,95.0,70.1,HIGH
+INF-055,Public Building,Vijayawada,16.5062,80.648,32,7,19,3,18,Fair,4,32,17,3.3,95.0,76.6,HIGH
+INF-056,Streetlight,Tenali,16.243,80.64,12,0,13,3,7,Good,0,0,3,0.8,51.6,19.0,LOW
+INF-057,Drainage,Guntur,16.3067,80.4365,23,2,5,5,33,Good,1,0,8,0.0,95.0,38.4,MEDIUM
+INF-058,Drainage,Machilipatnam,16.1875,81.1389,62,18,40,2,32,Poor,7,36,25,7.6,95.0,100.0,CRITICAL
+INF-059,Drainage,Guntur,16.3067,80.4365,41,13,23,4,8,Fair,7,41,2,4.6,95.0,69.3,HIGH
+INF-060,Road,Visakhapatnam,17.6868,83.2185,19,3,3,5,18,Good,1,8,2,0.0,75.7,25.5,LOW
+INF-061,Drainage,Visakhapatnam,17.6868,83.2185,26,12,16,2,35,Fair,7,34,12,2.3,95.0,78.9,HIGH
+INF-062,Public Building,Nellore,14.4426,79.9865,35,6,17,2,25,Fair,3,27,7,4.5,95.0,55.1,MEDIUM
+INF-063,Road,Nellore,14.4426,79.9865,12,2,16,1,34,Good,0,0,5,0.0,80.8,23.9,LOW
+INF-064,Streetlight,Eluru,16.7107,81.0952,0,3,7,3,32,Good,4,7,0,1.5,75.5,29.5,LOW
+INF-065,Bridge,Nellore,14.4426,79.9865,20,3,5,2,20,Good,3,7,7,0.9,84.9,33.9,LOW
+INF-066,Water Pipeline,Eluru,16.7107,81.0952,40,7,23,3,16,Fair,1,30,16,3.5,95.0,73.2,HIGH
+INF-067,Drainage,Guntur,16.3067,80.4365,3,8,8,3,23,Good,0,10,3,0.2,66.0,28.6,LOW
+INF-068,Road,Machilipatnam,16.1875,81.1389,50,11,38,1,26,Poor,10,36,25,4.7,95.0,100.0,CRITICAL
+INF-069,Bridge,Tenali,16.243,80.64,27,5,20,1,13,Fair,1,38,9,3.9,95.0,48.4,MEDIUM
+INF-070,Streetlight,Guntur,16.3067,80.4365,26,9,27,5,21,Fair,5,20,9,4.5,95.0,86.6,CRITICAL
+INF-071,Streetlight,Nellore,14.4426,79.9865,6,2,7,4,22,Good,0,25,2,0.0,91.9,37.3,MEDIUM
+INF-072,Streetlight,Nellore,14.4426,79.9865,33,11,14,1,17,Fair,3,16,5,2.0,95.0,57.9,MEDIUM
+INF-073,Public Building,Guntur,16.3067,80.4365,6,4,14,3,30,Good,4,12,3,1.4,95.0,41.6,MEDIUM
+INF-074,Water Pipeline,Eluru,16.7107,81.0952,13,0,0,5,10,Good,0,20,7,1.5,65.6,30.2,LOW
+INF-075,Road,Tenali,16.243,80.64,38,8,22,1,24,Fair,5,44,10,5.4,95.0,65.3,HIGH
+INF-076,Streetlight,Vijayawada,16.5062,80.648,0,2,3,5,16,Good,1,14,0,0.3,79.3,33.9,LOW
+INF-077,Streetlight,Vijayawada,16.5062,80.648,0,1,14,2,10,Good,3,25,0,1.4,68.6,30.4,LOW
+INF-078,Water Pipeline,Eluru,16.7107,81.0952,34,4,26,5,8,Fair,2,20,13,6.5,95.0,58.7,MEDIUM
+INF-079,Drainage,Machilipatnam,16.1875,81.1389,46,15,39,4,2,Poor,5,48,21,7.1,95.0,99.4,CRITICAL
+INF-080,Drainage,Tenali,16.243,80.64,63,12,41,1,34,Poor,9,33,21,5.1,95.0,100.0,CRITICAL

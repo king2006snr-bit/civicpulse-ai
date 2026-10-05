@@ -1,0 +1,6 @@
+{
+  "name": "CivicPulse AI",
+  "description": "Urban infrastructure intelligence and citizen reporting portal",
+  "permissions": [],
+  "capabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

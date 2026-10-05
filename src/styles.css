@@ -1,0 +1,339 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+/*
+ * CivicPulse AI design system — light civic-tech theme.
+ * Blue/teal accents, soft surfaces, rounded components.
+ * All colors are oklch tokens; never hardcode colors in components.
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --font-display:
+    "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+  --font-sans:
+    "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-teal: var(--teal);
+  --color-teal-foreground: var(--teal-foreground);
+  --color-surface: var(--surface);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --shadow-2xs: 0 1px 2px 0 rgb(15 23 42 / 0.04);
+  --shadow-xs: 0 1px 2px 0 rgb(15 23 42 / 0.05);
+  --shadow-card: 0 1px 3px 0 rgb(15 23 42 / 0.05), 0 1px 2px -1px rgb(15 23 42 / 0.05);
+  --shadow-lift: 0 8px 20px -4px rgb(15 23 42 / 0.08), 0 4px 6px -2px rgb(15 23 42 / 0.03);
+  --animate-rise: civic-rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+  --animate-pulse-dot: civic-pulse-dot 2.6s ease-in-out infinite;
+}
+
+:root {
+  --radius: 0.875rem;
+  --background: oklch(0.985 0.005 230);
+  --foreground: oklch(0.24 0.035 250);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.24 0.035 250);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.24 0.035 250);
+  --primary: oklch(0.53 0.16 248);
+  --primary-foreground: oklch(0.99 0.005 230);
+  --secondary: oklch(0.955 0.015 230);
+  --secondary-foreground: oklch(0.32 0.05 250);
+  --muted: oklch(0.96 0.012 230);
+  --muted-foreground: oklch(0.53 0.03 250);
+  --accent: oklch(0.94 0.035 210);
+  --accent-foreground: oklch(0.3 0.06 245);
+  --teal: oklch(0.66 0.12 195);
+  --teal-foreground: oklch(0.2 0.04 220);
+  --surface: oklch(0.975 0.01 225);
+  --success: oklch(0.65 0.14 160);
+  --success-foreground: oklch(0.99 0.005 230);
+  --warning: oklch(0.79 0.15 80);
+  --warning-foreground: oklch(0.28 0.06 60);
+  --destructive: oklch(0.58 0.2 25);
+  --destructive-foreground: oklch(0.99 0.005 230);
+  --border: oklch(0.91 0.015 235);
+  --input: oklch(0.91 0.015 235);
+  --ring: oklch(0.63 0.13 235);
+  --chart-1: oklch(0.53 0.16 248);
+  --chart-2: oklch(0.66 0.12 195);
+  --chart-3: oklch(0.72 0.14 160);
+  --chart-4: oklch(0.79 0.15 80);
+  --chart-5: oklch(0.58 0.2 25);
+  --sidebar: oklch(1 0 0);
+  --sidebar-foreground: oklch(0.3 0.04 250);
+  --sidebar-primary: oklch(0.53 0.16 248);
+  --sidebar-primary-foreground: oklch(0.99 0.005 230);
+  --sidebar-accent: oklch(0.955 0.02 225);
+  --sidebar-accent-foreground: oklch(0.3 0.06 245);
+  --sidebar-border: oklch(0.92 0.015 235);
+  --sidebar-ring: oklch(0.63 0.13 235);
+}
+
+.dark {
+  --background: oklch(0.14 0.02 250);
+  --foreground: oklch(0.96 0.01 230);
+  --card: oklch(0.18 0.025 250);
+  --card-foreground: oklch(0.96 0.01 230);
+  --popover: oklch(0.18 0.025 250);
+  --popover-foreground: oklch(0.96 0.01 230);
+  --primary: oklch(0.65 0.16 248);
+  --primary-foreground: oklch(0.99 0.005 230);
+  --secondary: oklch(0.22 0.03 250);
+  --secondary-foreground: oklch(0.9 0.02 230);
+  --muted: oklch(0.2 0.025 250);
+  --muted-foreground: oklch(0.65 0.02 240);
+  --accent: oklch(0.24 0.04 240);
+  --accent-foreground: oklch(0.96 0.01 230);
+  --teal: oklch(0.68 0.13 190);
+  --teal-foreground: oklch(0.14 0.03 220);
+  --surface: oklch(0.16 0.025 250);
+  --success: oklch(0.68 0.15 155);
+  --success-foreground: oklch(0.99 0.005 230);
+  --warning: oklch(0.78 0.16 75);
+  --warning-foreground: oklch(0.16 0.04 75);
+  --destructive: oklch(0.62 0.22 25);
+  --destructive-foreground: oklch(0.99 0.005 230);
+  --border: oklch(0.26 0.025 250);
+  --input: oklch(0.26 0.025 250);
+  --ring: oklch(0.65 0.16 248);
+  --chart-1: oklch(0.65 0.16 248);
+  --chart-2: oklch(0.68 0.13 190);
+  --chart-3: oklch(0.72 0.15 155);
+  --chart-4: oklch(0.78 0.16 75);
+  --chart-5: oklch(0.62 0.22 25);
+  --sidebar: oklch(0.16 0.025 250);
+  --sidebar-foreground: oklch(0.9 0.02 230);
+  --sidebar-primary: oklch(0.65 0.16 248);
+  --sidebar-primary-foreground: oklch(0.99 0.005 230);
+  --sidebar-accent: oklch(0.22 0.03 250);
+  --sidebar-accent-foreground: oklch(0.96 0.01 230);
+  --sidebar-border: oklch(0.26 0.025 250);
+  --sidebar-ring: oklch(0.65 0.16 248);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.025em;
+    font-weight: 600;
+  }
+}
+
+@utility civic-hero-grid {
+  background-image:
+    linear-gradient(to right, oklch(0.53 0.16 248 / 0.07) 1px, transparent 1px),
+    linear-gradient(to bottom, oklch(0.53 0.16 248 / 0.07) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+@utility civic-gradient {
+  background-image: linear-gradient(
+    135deg,
+    oklch(0.53 0.16 248) 0%,
+    oklch(0.6 0.14 220) 50%,
+    oklch(0.68 0.12 192) 100%
+  );
+}
+
+/*
+ * Landing page surfaces: soft light glow, masked grid, gradient display text
+ * and animated flow connectors. All values derive from the theme tokens above.
+ */
+
+@utility civic-glow {
+  background-image:
+    radial-gradient(
+      48rem 26rem at 50% -12rem,
+      color-mix(in oklab, var(--teal) 22%, transparent),
+      transparent 68%
+    ),
+    radial-gradient(
+      38rem 22rem at 86% 2%,
+      color-mix(in oklab, var(--primary) 14%, transparent),
+      transparent 66%
+    ),
+    radial-gradient(
+      32rem 18rem at 10% 8%,
+      color-mix(in oklab, var(--success) 12%, transparent),
+      transparent 66%
+    );
+}
+
+@utility civic-grid-fade {
+  mask-image: radial-gradient(68% 58% at 50% 0%, black 15%, transparent 76%);
+}
+
+@utility civic-text-gradient {
+  background-image: linear-gradient(100deg, var(--primary) 10%, var(--teal) 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+@utility civic-flow-x {
+  background-image: repeating-linear-gradient(
+    90deg,
+    color-mix(in oklab, var(--primary) 45%, transparent) 0 6px,
+    color-mix(in oklab, var(--primary) 10%, transparent) 6px 13px
+  );
+  background-size: 26px 100%;
+  animation: civic-flow-x 1.4s linear infinite;
+}
+
+@utility civic-flow-y {
+  background-image: repeating-linear-gradient(
+    180deg,
+    color-mix(in oklab, var(--primary) 45%, transparent) 0 6px,
+    color-mix(in oklab, var(--primary) 10%, transparent) 6px 13px
+  );
+  background-size: 100% 26px;
+  animation: civic-flow-y 1.4s linear infinite;
+}
+
+@keyframes civic-rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes civic-pulse-dot {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 color-mix(in oklab, var(--teal) 55%, transparent);
+  }
+  60% {
+    box-shadow: 0 0 0 6px color-mix(in oklab, var(--teal) 0%, transparent);
+  }
+}
+
+@keyframes civic-flow-x {
+  to {
+    background-position: 26px 0;
+  }
+}
+
+@keyframes civic-flow-y {
+  to {
+    background-position: 0 26px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-rise,
+  .animate-pulse-dot,
+  .civic-flow-x,
+  .civic-flow-y {
+    animation: none;
+  }
+}
+
+/* Mapbox infrastructure markers */
+.civic-marker {
+  width: 18px;
+  height: 18px;
+  border-radius: 9999px;
+  background: var(--marker);
+  border: 3px solid var(--card);
+  box-shadow:
+    0 0 0 4px color-mix(in oklab, var(--marker) 30%, transparent),
+    0 2px 6px rgb(0 0 0 / 0.25);
+  cursor: pointer;
+  transition:
+    width 0.15s,
+    height 0.15s;
+}
+.civic-marker:hover,
+.civic-marker.is-selected {
+  width: 26px;
+  height: 26px;
+  box-shadow:
+    0 0 0 7px color-mix(in oklab, var(--marker) 35%, transparent),
+    0 3px 10px rgb(0 0 0 / 0.3);
+}
+
+/* Custom Mapbox GL Popup Container */
+.civic-mapbox-popup .mapboxgl-popup-content {
+  padding: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  border-radius: 1rem !important;
+}
+
+.civic-mapbox-popup .mapboxgl-popup-tip {
+  border-top-color: var(--color-card) !important;
+  border-bottom-color: var(--color-card) !important;
+}
+
+.civic-mapbox-popup .mapboxgl-popup-close-button {
+  display: none !important;
+}

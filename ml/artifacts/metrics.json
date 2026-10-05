@@ -1,0 +1,100 @@
+{
+  "model": "gradient_boosting",
+  "trained_at": "2026-10-04T18:20:42.776742+00:00",
+  "n_samples": 80,
+  "features": [
+    "complaint_count",
+    "complaints_last_7_days",
+    "complaints_last_30_days",
+    "complaint_severity_1_to_5",
+    "infrastructure_age_years",
+    "previous_incidents",
+    "maintenance_delay_days",
+    "unresolved_complaints",
+    "infrastructure_condition"
+  ],
+  "evaluation": "out-of-fold (5-fold CV): each row scored by a model that did not train on it",
+  "regression": {
+    "mae": 4.681374516843325,
+    "r2": 0.9524773742320308
+  },
+  "risk_level": {
+    "accuracy": 0.8125,
+    "per_class": {
+      "LOW": {
+        "precision": 0.8181818181818182,
+        "recall": 0.9,
+        "f1": 0.8571428571428571,
+        "support": 20
+      },
+      "MEDIUM": {
+        "precision": 0.4,
+        "recall": 0.2,
+        "f1": 0.26666666666666666,
+        "support": 10
+      },
+      "HIGH": {
+        "precision": 0.6923076923076923,
+        "recall": 0.9473684210526315,
+        "f1": 0.8,
+        "support": 19
+      },
+      "CRITICAL": {
+        "precision": 1.0,
+        "recall": 0.8709677419354839,
+        "f1": 0.9310344827586207,
+        "support": 31
+      }
+    },
+    "confusion_matrix": {
+      "labels": [
+        "LOW",
+        "MEDIUM",
+        "HIGH",
+        "CRITICAL"
+      ],
+      "matrix": [
+        [
+          18,
+          2,
+          0,
+          0
+        ],
+        [
+          4,
+          2,
+          4,
+          0
+        ],
+        [
+          0,
+          1,
+          18,
+          0
+        ],
+        [
+          0,
+          0,
+          4,
+          27
+        ]
+      ]
+    },
+    "predictions_more_than_one_level_off": 0
+  },
+  "candidate_comparison": {
+    "ridge": {
+      "cv_mae": 5.366577034327391,
+      "cv_r2": 0.933926355820553
+    },
+    "random_forest": {
+      "cv_mae": 4.9271181043169765,
+      "cv_r2": 0.933985224219174
+    },
+    "gradient_boosting": {
+      "cv_mae": 4.761144605779371,
+      "cv_r2": 0.9466945773245683
+    }
+  },
+  "version": "gbr-20261004182043"
+}
